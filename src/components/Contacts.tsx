@@ -2,15 +2,14 @@ import { Box, InputBase, Stack, styled, Typography } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
 
-const Search = styled("div")(() => ({
+export const Search = styled("div")(() => ({
   position: "relative",
   borderRadius: 12,
   background: "#EEEEEE",
-  width: "100%",
   margin: "10px 0",
 }));
 
-const SearchIconWrapper = styled("div")(() => ({
+export const SearchIconWrapper = styled("div")(() => ({
   height: "100%",
   position: "absolute",
   pointerEvents: "none",
@@ -20,9 +19,8 @@ const SearchIconWrapper = styled("div")(() => ({
   paddingLeft: 12,
 }));
 
-const StyledInputBase = styled(InputBase)(() => ({
+export const StyledInputBase = styled(InputBase)(() => ({
   "& .MuiInputBase-input": {
-    width: "100%",
     padding: 10,
     marginLeft: 34,
   },
@@ -39,22 +37,6 @@ interface IContactsArr {
 
 const contactsList: IContactsArr = {
   contacts: [
-    {
-      username: "John Doe",
-      sentence: "How are you doing?",
-    },
-    {
-      username: "John Doe",
-      sentence: "How are you doing?",
-    },
-    {
-      username: "John Doe",
-      sentence: "How are you doing?",
-    },
-    {
-      username: "John Doe",
-      sentence: "How are you doing?",
-    },
     {
       username: "John Doe",
       sentence: "How are you doing?",
