@@ -1,4 +1,4 @@
-import { Box, Divider, Drawer, Stack, styled } from "@mui/material";
+import { Box, Divider, Drawer, Stack } from "@mui/material";
 import AnimationIcon from "@mui/icons-material/Animation";
 import Person2Icon from "@mui/icons-material/Person2";
 import LanguageIcon from "@mui/icons-material/Language";
