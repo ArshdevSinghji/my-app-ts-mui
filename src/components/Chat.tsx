@@ -25,7 +25,7 @@ const Chat = () => {
             alignItems={"center"}
           >
             <Box display={"flex"} alignItems={"center"} gap={1}>
-              <AccountCircleOutlinedIcon />
+              <AccountCircleOutlinedIcon sx={{ fontSize: "36px" }} />
               <Box>
                 <Typography>Travis Barker</Typography>
                 <Typography fontSize={12} color="#27AE60">

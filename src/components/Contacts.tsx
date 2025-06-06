@@ -1,6 +1,7 @@
 import { Box, InputBase, Stack, styled, Typography } from "@mui/material";
 import SearchIcon from "@mui/icons-material/Search";
 import AccountCircleOutlinedIcon from "@mui/icons-material/AccountCircleOutlined";
+import type { ReactNode } from "react";
 
 export const Search = styled("div")(() => ({
   position: "relative",
@@ -28,7 +29,7 @@ export const StyledInputBase = styled(InputBase)(() => ({
 
 interface IContacts {
   username: string;
-  sentence: string;
+  sentence: ReactNode;
 }
 
 interface IContactsArr {
@@ -42,36 +43,40 @@ const contactsList: IContactsArr = {
       sentence: "How are you doing?",
     },
     {
-      username: "John Doe",
-      sentence: "How are you doing?",
+      username: "Travis Barker",
+      sentence: (
+        <Typography color="success" fontSize={12}>
+          is typing...
+        </Typography>
+      ),
     },
     {
-      username: "John Doe",
-      sentence: "How are you doing?",
+      username: "Kate Rose",
+      sentence: "you: See you tomorrow!",
     },
     {
-      username: "John Doe",
-      sentence: "How are you doing?",
+      username: "Robert Parker",
+      sentence: "Awesome!",
     },
     {
-      username: "John Doe",
-      sentence: "How are you doing?",
+      username: "Rick Owens",
+      sentence: "HGood idea 🤩",
     },
     {
-      username: "John Doe",
-      sentence: "How are you doing?",
+      username: "George Orwell",
+      sentence: "you: Literally 1984 🤨",
     },
     {
-      username: "John Doe",
-      sentence: "How are you doing?",
+      username: "Franz Kafka",
+      sentence: "Are you interested in insectitides for..",
     },
     {
-      username: "John Doe",
-      sentence: "How are you doing?",
+      username: "Tom Hardy",
+      sentence: "Smells like design spirit..",
     },
     {
-      username: "John Doe",
-      sentence: "How are you doing?",
+      username: "Vivienne Westwood",
+      sentence: "This cat is so funny 😸",
     },
   ],
 };
@@ -124,7 +129,7 @@ const Contacts = () => {
                 },
               }}
             >
-              <AccountCircleOutlinedIcon />
+              <AccountCircleOutlinedIcon sx={{ fontSize: "36px" }} />
               <Box py={1}>
                 <Typography>{item.username}</Typography>
                 <Typography sx={{ fontSize: 12 }}>{item.sentence}</Typography>
